@@ -10,7 +10,4 @@ tracker:
                 - fullsend-ai/fullsend
                 - fullsend-ai/agents
 runtime: dummy
-agents:
-    - name: review
-      trigger: event.transition.kind == "comment_added" && has(event.entity.linked_change_proposal) && has(event.transition.comment.command) && event.transition.comment.command == "/fs-review" && event.actor.kind == "human"
 mint_url: https://bt-9f892f82-bt-mint.fullsend-ai.workers.dev
